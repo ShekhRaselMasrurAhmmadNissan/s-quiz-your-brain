@@ -18,7 +18,7 @@ const Navbar = () => {
 							alt=""
 							className="w-8 rounded-full ring-1 ring-offset-1 ring-emerald-400"
 						/>
-						<span className="ml-4 text-3xl font-bold tracking-wide text-emerald-400 uppercase">
+						<span className="ml-4 text-lg md:text-3xl font-bold tracking-wide text-emerald-400 uppercase">
 							S-Quiz Your Brain
 						</span>
 					</NavLink>
@@ -106,8 +106,8 @@ const Navbar = () => {
 							</svg>
 						</button>
 						{isMenuOpen && (
-							<div className="absolute top-14 left-0 w-full">
-								<div className="p-5 bg-white border rounded shadow-sm">
+							<div className="absolute top-14 left-0 w-full bg-white z-10">
+								<div className="p-5 border rounded shadow-sm">
 									<div className="flex items-center justify-between mb-4">
 										<div>
 											<button
@@ -138,6 +138,9 @@ const Navbar = () => {
 													aria-label="Home"
 													title="Home"
 													className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-700 hover:underline hover:underline-offset-8 hover:decoration-blue-700"
+													onClick={() =>
+														setIsMenuOpen(false)
+													}
 												>
 													Home
 												</NavLink>
@@ -148,6 +151,9 @@ const Navbar = () => {
 													aria-label="Quiz Statistics"
 													title="Quiz Statistics"
 													className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-700 hover:underline hover:underline-offset-8 hover:decoration-blue-700"
+													onClick={() =>
+														setIsMenuOpen(false)
+													}
 												>
 													Statistics
 												</NavLink>
@@ -158,6 +164,9 @@ const Navbar = () => {
 													aria-label="Blogs"
 													title="Blogs"
 													className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-700 hover:underline hover:underline-offset-8 hover:decoration-blue-700"
+													onClick={() =>
+														setIsMenuOpen(false)
+													}
 												>
 													Pricing
 												</NavLink>
@@ -168,6 +177,9 @@ const Navbar = () => {
 													aria-label="About us"
 													title="About us"
 													className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-700 hover:underline hover:underline-offset-8 hover:decoration-blue-700"
+													onClick={() =>
+														setIsMenuOpen(false)
+													}
 												>
 													About us
 												</NavLink>

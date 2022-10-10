@@ -1,4 +1,6 @@
+import Lottie from 'lottie-react';
 import React from 'react';
+import thinking from '../../assets/thinking.json';
 
 const Home = () => {
 	return (
@@ -12,10 +14,10 @@ const Home = () => {
 				>
 					<path d="M50 0H100L50 100H0L50 0Z" />
 				</svg>
-				<img
-					className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-					src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-					alt=""
+				<Lottie
+					animationData={thinking}
+					loop={true}
+					className="h-[600px]"
 				/>
 			</div>
 			<div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
