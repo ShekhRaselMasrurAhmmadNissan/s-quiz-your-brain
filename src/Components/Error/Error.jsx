@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Error = () => {
 	return (
 		<div>
-			<section className="flex items-center h-full sm:p-8 bg-gray-50 text-gray-800">
+			<section className="flex items-center h-full sm:p-8 text-gray-800">
 				<div className="container flex flex-col items-center justify-center px-5 mx-auto my-8 space-y-4 text-center sm:max-w-md lg:max-w-lg">
 					<Lottie
 						animationData={error}
