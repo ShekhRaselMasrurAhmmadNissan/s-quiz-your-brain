@@ -15,3 +15,34 @@ export const getAllQuizByCategoriesId = async (id) => {
 	const quizInformation = quizData.data;
 	return quizInformation;
 };
+
+export const isCorrectAnswer = (answer, correctAnswer) => {
+	if (
+		answer.toLowerCase().replace(/\s+/g, ' ').trim() ===
+		correctAnswer.toLowerCase().replace(/\s+/g, ' ').trim()
+	) {
+		return true;
+	} else {
+		return false;
+	}
+};
+
+export const setAnswerClass = (answerIndex, findSelectedAnswer) => {
+	if (findSelectedAnswer) {
+		if (
+			findSelectedAnswer.answer === answerIndex &&
+			findSelectedAnswer.isCorrect
+		) {
+			return 'border-2 p-2 border-green-500 bg-green-500 rounded-xl font-semibold hover:bg-green-500 cursor-pointer hover:text-white duration-300';
+		} else if (
+			findSelectedAnswer.answer === answerIndex &&
+			!findSelectedAnswer.isCorrect
+		) {
+			return 'border-2 p-2 border-green-500 bg-red-400 rounded-xl font-semibold hover:bg-green-500 cursor-pointer hover:text-white duration-300';
+		} else {
+			return 'border-2 p-2 border-green-500 rounded-xl font-semibold hover:bg-green-500 cursor-pointer hover:text-white duration-300';
+		}
+	} else {
+		return 'border-2 p-2 border-green-500 rounded-xl font-semibold hover:bg-green-500 cursor-pointer hover:text-white duration-300';
+	}
+};
