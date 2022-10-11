@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import AllQuizPage from '../Components/AllQuizPage/AllQuizPage';
 import Error from '../Components/Error/Error';
 import Home from '../Components/Home/Home';
+import Statistics from '../Components/Statistics/Statistics';
 import MainLayout from '../Layouts/MainLayout/MainLayout';
 import {
 	getAllQuizByCategoriesId,
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
 					getAllQuizByCategoriesId(params.id),
 				element: <AllQuizPage />,
 			},
+			{ path: 'statistics', element: <Statistics /> },
 		],
 	},
 ]);
