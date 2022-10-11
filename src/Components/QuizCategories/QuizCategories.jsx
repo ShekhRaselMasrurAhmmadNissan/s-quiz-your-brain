@@ -1,13 +1,19 @@
 import React, { useContext } from 'react';
 import { QuizCategoriesContext } from '../../Layouts/MainLayout/MainLayout';
+import SingleQuizCategory from '../SingleQuizCategory/SingleQuizCategory';
 
 const QuizCategories = () => {
 	const quizCategories = useContext(QuizCategoriesContext);
 	console.log(quizCategories);
 	return (
-		<div>
-			<h1>This is Quiz Categories: {quizCategories?.length}</h1>
-		</div>
+		<>
+			{quizCategories.map((singleCategory) => (
+				<SingleQuizCategory
+					key={singleCategory.id}
+					singleCategory={singleCategory}
+				></SingleQuizCategory>
+			))}
+		</>
 	);
 };
 
