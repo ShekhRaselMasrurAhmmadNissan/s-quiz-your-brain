@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import {
 	CorrectAnswerCounterContext,
@@ -12,6 +12,7 @@ const AllQuizPage = () => {
 	const [incorrect, setIncorrect] = useContext(IncorrectAnswerCounterContext);
 	const quizInformation = useLoaderData();
 	const { name, total, questions } = quizInformation;
+	const [selected, setSelected] = useState([]);
 	return (
 		<>
 			<div className="grid grid-cols-1 lg:grid-cols-5 mt-6">
@@ -25,10 +26,8 @@ const AllQuizPage = () => {
 								key={question.id}
 								question={question}
 								index={index}
-								correct={correct}
-								setCorrect={setCorrect}
-								incorrect={incorrect}
-								setIncorrect={setIncorrect}
+								selected={selected}
+								setSelected={setSelected}
 							></SingleQuestion>
 						))}
 					</div>
