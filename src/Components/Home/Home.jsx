@@ -1,10 +1,19 @@
 import Lottie from 'lottie-react';
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import thinking from '../../assets/thinking.json';
+import {
+	CorrectAnswerCounterContext,
+	IncorrectAnswerCounterContext,
+} from '../../Layouts/MainLayout/MainLayout';
 import QuizCategories from '../QuizCategories/QuizCategories';
 
 const Home = () => {
+	const [correct, setCorrect] = useContext(CorrectAnswerCounterContext);
+	const [incorrect, setIncorrect] = useContext(IncorrectAnswerCounterContext);
+
+	setCorrect(0);
+	setIncorrect(0);
 	return (
 		<>
 			<header className="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">

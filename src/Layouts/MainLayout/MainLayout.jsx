@@ -1,16 +1,26 @@
-import React, { createContext } from 'react';
+import React, { createContext, useState } from 'react';
 import { Outlet, useLoaderData } from 'react-router-dom';
 import Navbar from '../../Components/NavBar/Navbar';
 
 export const QuizCategoriesContext = createContext([]);
+export const CorrectAnswerCounterContext = createContext([]);
+export const IncorrectAnswerCounterContext = createContext([]);
 
 const MainLayout = () => {
 	const quizCategories = useLoaderData();
+	const [correct, setCorrect] = useState(0);
+	const [incorrect, setIncorrect] = useState(0);
 	return (
-		<QuizCategoriesContext.Provider value={quizCategories}>
-			<Navbar />
-			<Outlet />
-		</QuizCategoriesContext.Provider>
+		<CorrectAnswerCounterContext.Provider value={[correct, setCorrect]}>
+			<IncorrectAnswerCounterContext.Provider
+				value={[incorrect, setIncorrect]}
+			>
+				<QuizCategoriesContext.Provider value={quizCategories}>
+					<Navbar />
+					<Outlet />
+				</QuizCategoriesContext.Provider>
+			</IncorrectAnswerCounterContext.Provider>
+		</CorrectAnswerCounterContext.Provider>
 	);
 };
 
