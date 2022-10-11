@@ -37,6 +37,7 @@ const AllQuizPage = () => {
 					<QuizResult
 						correct={correct}
 						incorrect={incorrect}
+						total={total}
 					></QuizResult>
 				</div>
 			</div>
