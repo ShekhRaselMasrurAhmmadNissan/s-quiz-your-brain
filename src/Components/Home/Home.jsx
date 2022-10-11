@@ -45,9 +45,10 @@ const Home = () => {
 							</span>
 						</h2>
 						<p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
-							Sed ut perspiciatis unde omnis iste natus error sit
-							voluptatem accusantium doloremque laudantium, totam
-							rem aperiam, eaque ipsa quae. explicabo.
+							Quiz or Brain teasers are one of the most efficient
+							way to judge ones knowledge on any topic. So what
+							are you waiting for? Choose a topic and start your
+							exam.
 						</p>
 						<div className="flex items-center">
 							<Link
