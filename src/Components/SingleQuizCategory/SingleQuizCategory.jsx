@@ -5,11 +5,11 @@ const SingleQuizCategory = ({ singleCategory }) => {
 	const { id, name, logo, total } = singleCategory;
 	return (
 		<>
-			<div className="rounded-md w-[95%] md:w-[500px] mx-auto shadow-md bg-gray-200 text-gray-800">
+			<div className="rounded-xl w-[95%] md:w-[500px] mx-auto shadow-md bg-gray-200 text-gray-800">
 				<img
 					src={logo}
 					alt=""
-					className="object-cover object-center w-full rounded-t-md md:h-[500px] bg-gray-500"
+					className="object-cover object-center w-full rounded-xl md:h-[500px] bg-gray-500"
 				/>
 				<div className="flex flex-col justify-between p-6 space-y-8">
 					<div className="space-y-2">
