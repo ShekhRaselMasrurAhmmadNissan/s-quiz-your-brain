@@ -1,8 +1,12 @@
 import { createBrowserRouter } from 'react-router-dom';
+import AllQuizPage from '../Components/AllQuizPage/AllQuizPage';
 import Error from '../Components/Error/Error';
 import Home from '../Components/Home/Home';
 import MainLayout from '../Layouts/MainLayout/MainLayout';
-import { getAllQuizCategories } from '../Utilities/Loaders/Loaders';
+import {
+	getAllQuizByCategoriesId,
+	getAllQuizCategories,
+} from '../Utilities/Loaders/Loaders';
 
 const router = createBrowserRouter([
 	{
@@ -13,6 +17,12 @@ const router = createBrowserRouter([
 		children: [
 			{ index: true, element: <Home /> },
 			{ path: 'home', element: <Home /> },
+			{
+				path: 'quiz/:id',
+				loader: async ({ params }) =>
+					getAllQuizByCategoriesId(params.id),
+				element: <AllQuizPage />,
+			},
 		],
 	},
 ]);
