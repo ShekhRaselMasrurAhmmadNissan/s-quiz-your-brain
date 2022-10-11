@@ -14,7 +14,7 @@ const Navbar = () => {
 						className="flex items-center"
 					>
 						<img
-							src="../../../public/logo.png"
+							src="/logo.png"
 							alt=""
 							className="w-8 rounded-full ring-1 ring-offset-1 ring-emerald-400"
 						/>
