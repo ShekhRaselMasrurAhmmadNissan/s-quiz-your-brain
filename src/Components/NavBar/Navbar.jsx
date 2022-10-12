@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	return (
-		<nav className="bg-gray-100">
+		<nav className="bg-gray-100 sticky top-0 z-10">
 			<div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
 				<div className="relative flex items-center justify-between">
 					<NavLink
