@@ -1,5 +1,6 @@
 import React, { createContext, useState } from 'react';
 import { Outlet, useLoaderData } from 'react-router-dom';
+import Footer from '../../Components/Footer/Footer';
 import Navbar from '../../Components/NavBar/Navbar';
 
 export const QuizCategoriesContext = createContext([]);
@@ -18,6 +19,7 @@ const MainLayout = () => {
 				<QuizCategoriesContext.Provider value={quizCategories}>
 					<Navbar />
 					<Outlet />
+					<Footer />
 				</QuizCategoriesContext.Provider>
 			</IncorrectAnswerCounterContext.Provider>
 		</CorrectAnswerCounterContext.Provider>
