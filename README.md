@@ -39,6 +39,5 @@ This project was created using [Vite] and the packages was installed by using [n
 [react router]: https://reactrouter.com/en/main
 [react toastify]: https://www.npmjs.com/package/react-toastify
 [recharts]: https://recharts.org/en-US/
-
-[S-Quiz Your Brain]: <>
-[Click Here]: <>
+[s-quiz your brain]: https://ornate-daffodil-a72dbb.netlify.app/
+[click here]: https://ornate-daffodil-a72dbb.netlify.app/
