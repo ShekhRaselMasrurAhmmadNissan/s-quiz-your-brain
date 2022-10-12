@@ -71,7 +71,10 @@ const Home = () => {
 
 			{/* Quiz Categories Section Start */}
 
-			<section className="mt-4 md:mt-16 md:w-4/5 lg:w-[90%] mx-auto grid grid-cols-1 justify-evenly gap-y-8">
+			<section
+				id="topics"
+				className="mt-4 md:mt-16 md:w-4/5 lg:w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 justify-evenly gap-y-8"
+			>
 				<QuizCategories></QuizCategories>
 			</section>
 		</>

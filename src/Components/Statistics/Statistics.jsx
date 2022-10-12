@@ -14,7 +14,7 @@ const Statistics = () => {
 	const categories = useContext(QuizCategoriesContext);
 	return (
 		<div className="w-[90%] mx-auto mt-12">
-			<p className="mx-12 my-8 ">
+			<p className="mx-12 my-8 shadow-md text-xl font-medium text-center py-2 rounded-xl">
 				This is the chart of numbers of quiz in each Category.
 			</p>
 			<ResponsiveContainer width="100%" height={500}>
