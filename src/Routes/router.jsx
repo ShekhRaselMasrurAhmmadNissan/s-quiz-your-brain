@@ -1,4 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
+import AboutUs from '../Components/Aboutus/AboutUs';
 import AllQuizPage from '../Components/AllQuizPage/AllQuizPage';
 import Blogs from '../Components/Blogs/Blogs';
 import Error from '../Components/Error/Error';
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
 			{ path: 'topics', element: <QuizCategories /> },
 			{ path: 'statistics', element: <Statistics /> },
 			{ path: 'blogs', element: <Blogs /> },
+			{ path: 'about', element: <AboutUs /> },
 		],
 	},
 ]);
