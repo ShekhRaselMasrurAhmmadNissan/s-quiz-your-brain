@@ -1,69 +1,62 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (
 		<>
 			<footer className="mt-4 lg:mt-8 px-4 lg:px-8 py-8 bg-gray-300 text-gray-600">
-				<div className="container flex flex-wrap items-center justify-between md:justify-center mx-auto space-y-4 sm:space-y-0">
-					<div className="flex flex-row pr-3 space-x-4 sm:space-x-8">
-						<div className="flex items-center justify-center flex-shrink-0 w-12 h-12 rounded-full bg-blue-600">
+				<div className="container grid grid-cols-1 lg:grid-cols-2 items-center justify-center lg:justify-between">
+					<div className="flex items-center justify-center lg:justify-start">
+						<Link
+							to="/"
+							aria-label="S-Quiz Your Brain"
+							title="S-Quiz Your Brain"
+							className="flex items-center"
+						>
 							<img
 								src="/logo.png"
 								alt=""
-								className="rounded-full"
+								className="w-12 rounded-full ring-1 ring-offset-1 ring-emerald-400"
 							/>
-						</div>
-						<ul className="flex flex-wrap items-center space-x-4 sm:space-x-8 text-blue-700">
-							<li>
-								<a rel="noopener noreferrer" href="#">
-									Terms of Use
-								</a>
-							</li>
-							<li>
-								<a rel="noopener noreferrer" href="#">
-									Privacy
-								</a>
-							</li>
-						</ul>
+							<span className="ml-4 text-lg md:text-3xl font-bold tracking-wide text-emerald-400 uppercase">
+								S-Quiz Your Brain
+							</span>
+						</Link>
 					</div>
-					<ul className="grid grid-cols-2 md:grid-cols-4 items-center justify-center lg:pl-3 space-x-4 sm:space-x-8 lg:divide-x-4 divide-green-400 text-lg text-blue-800 font-semibold">
-						<li>
-							<a
-								target="__blank"
-								rel="noopener noreferrer"
-								href="https://www.instagram.com/shekh_rasel_masrur_ahmmad/"
-							>
-								Instagram
-							</a>
-						</li>
-						<li className="pl-4">
-							<a
-								target="__blank"
-								rel="noopener noreferrer"
-								href="https://www.facebook.com/shekhraselmasrurahmmad"
-							>
-								Facebook
-							</a>
-						</li>
-						<li className="pl-4">
-							<a
-								target="__blank"
-								rel="noopener noreferrer"
-								href="https://twitter.com/NissanAhmmad"
-							>
-								Twitter
-							</a>
-						</li>
-						<li className="pl-4">
-							<a
-								target="__blank"
-								rel="noopener noreferrer"
-								href="https://github.com/ShekhRaselMasrurAhmmadNissan"
-							>
-								GitHub
-							</a>
-						</li>
-					</ul>
+					<div className="text-lg font-semibold grid grid-cols-2 md:grid-cols-4 items-center justify-center lg:justify-evenly text-center">
+						<a
+							target="__blank"
+							rel="noopener noreferrer"
+							href="https://www.instagram.com/shekh_rasel_masrur_ahmmad/"
+							className="text-blue-600 hover:text-emerald-400 px-2"
+						>
+							Instagram
+						</a>
+						<a
+							target="__blank"
+							rel="noopener noreferrer"
+							href="https://www.facebook.com/shekhraselmasrurahmmad"
+							className="text-blue-600 hover:text-emerald-400 px-2"
+						>
+							Facebook
+						</a>
+						<a
+							target="__blank"
+							rel="noopener noreferrer"
+							href="https://twitter.com/NissanAhmmad"
+							className="text-blue-600 hover:text-emerald-400 px-2"
+						>
+							Twitter
+						</a>
+						<a
+							target="__blank"
+							rel="noopener noreferrer"
+							href="https://github.com/ShekhRaselMasrurAhmmadNissan"
+							className="text-blue-600 hover:text-emerald-400 px-2"
+						>
+							GitHub
+						</a>
+					</div>
 				</div>
 			</footer>
 		</>

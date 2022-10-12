@@ -195,7 +195,7 @@ const Navbar = () => {
 														setIsMenuOpen(false)
 													}
 												>
-													Pricing
+													Blogs
 												</NavLink>
 											</li>
 											<li>
