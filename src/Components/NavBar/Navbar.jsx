@@ -39,6 +39,20 @@ const Navbar = () => {
 						</li>
 						<li>
 							<NavLink
+								to="topics"
+								aria-label="Topics"
+								title="Topics"
+								className={({ isActive }) =>
+									isActive
+										? 'font-medium tracking-wide text-lg transition-colors duration-200 text-blue-700 underline underline-offset-8 decoration-blue-700'
+										: 'font-medium tracking-wide text-black text-lg transition-colors duration-200 hover:text-blue-700 hover:underline hover:underline-offset-8 hover:decoration-blue-700'
+								}
+							>
+								Topics
+							</NavLink>
+						</li>
+						<li>
+							<NavLink
 								to="statistics"
 								aria-label="Quiz Statistics"
 								title="Quiz Statistics"
@@ -143,6 +157,19 @@ const Navbar = () => {
 													}
 												>
 													Home
+												</NavLink>
+											</li>
+											<li>
+												<NavLink
+													to="topics"
+													aria-label="Topics"
+													title="Topics"
+													className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-700 hover:underline hover:underline-offset-8 hover:decoration-blue-700"
+													onClick={() =>
+														setIsMenuOpen(false)
+													}
+												>
+													Topics
 												</NavLink>
 											</li>
 											<li>
