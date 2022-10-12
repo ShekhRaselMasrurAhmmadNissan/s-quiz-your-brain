@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	return (
-		<nav className="bg-gray-100 sticky top-0 z-10">
-			<div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+		<nav className="bg-gray-100 sticky top-0 z-40">
+			<div className="px-2 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-8 lg:px-8">
 				<div className="relative flex items-center justify-between">
 					<NavLink
 						to="/"
@@ -120,7 +120,7 @@ const Navbar = () => {
 							</svg>
 						</button>
 						{isMenuOpen && (
-							<div className="absolute top-14 left-0 w-full bg-white z-10">
+							<div className="absolute top-14 left-0 w-full bg-gray-200 z-10">
 								<div className="p-5 border rounded shadow-sm">
 									<div className="flex items-center justify-between mb-4">
 										<div>

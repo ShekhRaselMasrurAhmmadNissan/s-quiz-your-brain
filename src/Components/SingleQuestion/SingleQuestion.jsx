@@ -20,7 +20,7 @@ const SingleQuestion = ({ question, index, selected, setSelected }) => {
 	);
 
 	const showCorrectAnswer = () => {
-		toast.success(correctAnswer);
+		toast.success(`The correct answer is: ${correctAnswer}`);
 	};
 
 	// setSelectedAnswer(findSelectedAnswer?.answer);
