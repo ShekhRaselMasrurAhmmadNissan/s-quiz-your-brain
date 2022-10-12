@@ -31,6 +31,14 @@ This project was created using [Vite] and the packages was installed by using [n
 -   [React Toastify]
 -   [Recharts]
 
+## API Links
+
+-   Get all quiz topics: https://openapi.programming-hero.com/api/quiz
+
+-   Get topic details by topic id: https://openapi.programming-hero.com/api/quiz/${id}
+
+-   Example: https://openapi.programming-hero.com/api/quiz/1
+
 [//]: # "These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax"
 [reactjs]: https://reactjs.org/
 [vite]: https://vitejs.dev/
